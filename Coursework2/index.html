@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver  and Vehicles Accounts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section id = "header">
+        <a href = "#"><img src = "img/gov_transparent.png" class = "logo" alt = "" width = "250 "></a>
+        <div> 
+            <ul id = "navbar">
+                <li><a class = "active" href = "index.html">People Search</a></li>
+                <li><a href = "driver.html">Drivers</a></li>
+                <li><a href = "vehicle.html">Vehicle search</a></li>
+                <li><a href = "addCar.html">Add a vehicle</a></li>
+                
+            </ul>
+        </div>
+    </section>
+
+    <section id = "feature" class = "section-p1">
+        <div class = "fe-box">
+            <img src = "img/features/f1.png" alt = "">
+            <h6>Tte</h6>
+        </div>
+
+        <div class="font-controls">
+            <h4>Display Options<br></h4>
+            
+            <h6>Size</h6>
+            <button onclick="decreaseFontSize()"> <strong>A-</strong></button>
+            <button onclick="increaseFontSize()"><strong>A+</strong></button>
+            
+        </div>
+
+        <div class="container">
+            <h1>Supabase Database Interface</h1>
+            <p>
+                <input type="text" id="personId" placeholder="Enter Person ID">
+                <button onclick="getPerson()">Search Person</button>
+            </p>
+
+            <p>
+                <input type="text" id="vehicleId" placeholder="Enter Vehicle ID">
+                <button onclick="getVehicle()">Search Vehicle</button>
+            </p>
+
+            <div id="results"></div>
+
+
+        </div>
+    </section>
+
+    <div class="sidenav">
+        <a href = "#"><img src = "img/ekco.png" class = "logo" alt = "" ></a>
+
+        <a href="#">About</a>
+        
+    </div>
+    
+
+    <div id = "side" class = "sidebar">
+        <a href = "#"><img src = "img/ekco.png" class = "logo" alt = "" ></a>
+
+    </div>
+    <script src="script.js" type = "module"></script>
+    <script type="module">
+        import { fetchPeople } from './script.js';
+        // make 'fetchData' available to all other JavaScript
+        <window class="fetchPeople"></window> = fetchPeople;
+        </script>
+</body>
+</html>

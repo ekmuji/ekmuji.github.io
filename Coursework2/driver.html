@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Database</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section id = "header">
+        <a href = "#"><img src = "img/gov_transparent.png" class = "logo" alt = "" width = "250 "></a>
+        <div> 
+            <ul id = "navbar">
+                <li><a href = "index.html">People Search</a></li>
+                <li><a class = "active" href = "driver.html">Drivers</a></li>
+                <li><a href = "vehicle.html">Vehicle search</a></li>
+                <li><a href = "addCar.html">Add a vehicle</a></li>
+                
+            </ul>
+        </div>
+    </section>
+
+    <section id = "feature" class = "section-p1">
+        <div class = "fe-box">
+            <img src = "img/features/f1.png" alt = "">
+            <h6>Free Shipping</h6>
+        </div>
+
+        <div class="container">
+            <h1>People Search</h1>
+            <input type="text" id="personId" placeholder="Search by driver name">
+            <button onclick="getPerson()">Search Person</button>
+            <input type="text" id="vehicleId" placeholder="Search by driving license number">
+            <button onclick="getVehicle()">Search by Driving License</button>
+            <div id="results"></div>
+        </div>
+
+    <script src="script.js" type = "module"></script>
+</body>
+</html>
